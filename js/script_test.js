@@ -49,25 +49,48 @@
 
 // ФУНКЦИИ===========================================================
 
-let num = 10;
+// let num = 10;
 
-function showFirstMessge(text) {
-    console.log(text);
-    num = 20; // можем переопределить глобальную переменную но только внутри цикла 
-}
+// function showFirstMessge(text) {
+//     console.log(text);
+//     num = 20; // можем переопределить глобальную переменную но только внутри цикла 
+// }
 
-showFirstMessge("Hello world");
+// showFirstMessge("Hello world");
 
-function calc(a, b) {
-    return(a + b);
-}
+// function calc(a, b) {
+//     return(a + b);
+// }
 
-console.log(calc(10, 5));
+// console.log(calc(10, 5));
 
-function ret() {
-    let num = 50;
-    return num;
-}
+// function ret() {
+//     let num = 50;
+//     return num;
+// }
 
-const anotherNum = ret();
-console.log(anotherNum);
+// const anotherNum = ret();
+// console.log(anotherNum);
+
+// СВОЙСТВА и МЕТОДЫ ================================================
+
+let str = "test";
+
+console.log(str.toUpperCase());
+
+const fruit = "Some fruit";
+
+console.log(fruit.indexOf('fruit'));
+
+const logg = "Hello world";
+
+console.log(logg.slice(6));
+console.log(logg.substring(6, 11));
+console.log(logg.substr(6, 5)); // Указывается количество символов
+
+const num = 12.2;
+console.log(Math.round(num));
+
+const test = "12.2px";
+// console.log(parseInt(test));
+console.log(parseFloat(test));
