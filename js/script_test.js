@@ -74,23 +74,36 @@
 
 // СВОЙСТВА и МЕТОДЫ ================================================
 
-let str = "test";
+// let str = "test";
 
-console.log(str.toUpperCase());
+// console.log(str.toUpperCase());
 
-const fruit = "Some fruit";
+// const fruit = "Some fruit";
 
-console.log(fruit.indexOf('fruit'));
+// console.log(fruit.indexOf('fruit'));
 
-const logg = "Hello world";
+// const logg = "Hello world";
 
-console.log(logg.slice(6));
-console.log(logg.substring(6, 11));
-console.log(logg.substr(6, 5)); // Указывается количество символов
+// console.log(logg.slice(6));
+// console.log(logg.substring(6, 11));
+// console.log(logg.substr(6, 5)); // Указывается количество символов
 
-const num = 12.2;
-console.log(Math.round(num));
+// const num = 12.2;
+// console.log(Math.round(num));
 
-const test = "12.2px";
-// console.log(parseInt(test));
-console.log(parseFloat(test));
+// const test = "12.2px";
+// // console.log(parseInt(test));
+// console.log(parseFloat(test));
+
+// CALLBACK ФУНКЦИЯ==============================================================
+
+function learnJS(lang, callback) {
+    console.log(`Я учу: ${lang}`);
+    callback();
+}
+
+function done() {
+    console.log('Callback Function');
+}
+
+learnJS('JavaScript', done);
