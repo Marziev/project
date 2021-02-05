@@ -97,13 +97,42 @@
 
 // CALLBACK ФУНКЦИЯ==============================================================
 
-function learnJS(lang, callback) {
-    console.log(`Я учу: ${lang}`);
-    callback();
-}
+// function learnJS(lang, callback) {
+//     console.log(`Я учу: ${lang}`);
+//     callback();
+// }
 
-function done() {
-    console.log('Callback Function');
-}
+// function done() {
+//     console.log('Callback Function');
+// }
 
-learnJS('JavaScript', done);
+// learnJS('JavaScript', done);
+
+// ОБЪЕКТЫ И ИХ СВОЙСТАВ===============================================================
+
+const options = {
+    name: 'test',
+    width: 1024,
+    height: 1024,
+    colors: {
+        border: 'black',
+        bg: 'red'
+    }
+};
+
+// delete options.name;
+
+// console.log(options);
+
+console.log(Object.keys(options).length);
+
+for (let key in options) {
+    if (typeof(options[key]) === 'object') {
+        for (let i in options[key] ) {
+        console.log(`Свойство ${i} имеет значение ${options[key][i]}`);
+        }
+    } else {
+        console.log(`Свойство ${key} имеет значение ${options[key]}`);
+    }
+    
+}
