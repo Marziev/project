@@ -110,29 +110,88 @@
 
 // ОБЪЕКТЫ И ИХ СВОЙСТАВ===============================================================
 
-const options = {
-    name: 'test',
-    width: 1024,
-    height: 1024,
-    colors: {
-        border: 'black',
-        bg: 'red'
-    }
-};
+// const options = {
+//     name: 'test',
+//     width: 1024,
+//     height: 1024,
+//     colors: {
+//         border: 'black',
+//         bg: 'red'
+//     }
+// };
 
-// delete options.name;
+// // delete options.name;
 
-// console.log(options);
+// // console.log(options);
 
-console.log(Object.keys(options).length);
+// console.log(Object.keys(options).length);
 
-for (let key in options) {
-    if (typeof(options[key]) === 'object') {
-        for (let i in options[key] ) {
-        console.log(`Свойство ${i} имеет значение ${options[key][i]}`);
-        }
-    } else {
-        console.log(`Свойство ${key} имеет значение ${options[key]}`);
-    }
+// for (let key in options) {
+//     if (typeof(options[key]) === 'object') {
+//         for (let i in options[key] ) {
+//         console.log(`Свойство ${i} имеет значение ${options[key][i]}`);
+//         }
+//     } else {
+//         console.log(`Свойство ${key} имеет значение ${options[key]}`);
+//     }
     
+// }
+
+// let car = {
+//     color: 'grey',
+//     brand: 'audi',
+//     body: 'sedan',
+//     year: 2003,
+//     wheels: {
+//         size: 18,
+//         brand: 'michlen',
+//         type: 'winter'
+//     }
+// };
+
+// //console.log(car.wheels.size);
+
+// for (let key in car){
+//     if (typeof(car[key]) === 'object') {
+//         for (let i in car[key]) {
+//             console.log(`Данные автомобиля: ${key} - ${i} - ${car[key][i]}`);
+//         }
+        
+//     } else {
+//         console.log(`Данные автомобиля ${key} - ${car[key]}`);
+//     }
+    
+// }
+
+// МАССИВЫ И ПСЕВДОМАССИВЫ==========================================================================
+
+const arr = [1, 2, 15, 50, 8, 38];
+arr.sort(compareNum);
+console.log(arr);
+
+function compareNum(a, b) {
+    return a - b;
 }
+// arr.pop();
+// arr.push(10);
+// arr[90] = 0;
+// console.log(arr.length);
+
+// arr.forEach(function(item, i, arr) {
+//     console.log(`${i}: ${item} внутри массива ${arr}`);
+// });
+
+// for (let i = 0; i < arr.length; i++) {
+//     console.log(arr[i]);
+
+// }
+
+// for (let value of arr) {
+//     console.log(value);
+// }
+
+const str = prompt("", "");
+const products = str.split(", ");
+// console.log(products);
+products.sort();
+console.log(products.join("; "));
