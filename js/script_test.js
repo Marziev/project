@@ -165,13 +165,13 @@
 
 // МАССИВЫ И ПСЕВДОМАССИВЫ==========================================================================
 
-const arr = [1, 2, 15, 50, 8, 38];
-arr.sort(compareNum);
-console.log(arr);
+// const arr = [1, 2, 15, 50, 8, 38];
+// arr.sort(compareNum);
+// console.log(arr);
 
-function compareNum(a, b) {
-    return a - b;
-}
+// function compareNum(a, b) {
+//     return a - b;
+// }
 // arr.pop();
 // arr.push(10);
 // arr[90] = 0;
@@ -190,8 +190,37 @@ function compareNum(a, b) {
 //     console.log(value);
 // }
 
-const str = prompt("", "");
-const products = str.split(", ");
-// console.log(products);
-products.sort();
-console.log(products.join("; "));
+// const str = prompt("", "");
+// const products = str.split(", ");
+// // console.log(products);
+// products.sort();
+// console.log(products.join("; "));
+
+// ССЫЛКИ==================================================================================
+
+let a = 5,
+    b = a;
+
+b = b + a;
+
+console.log(b);
+console.log(a);
+
+// const obj = {
+//     a: 5,
+//     b:1
+// };
+
+// const copy = obj; //Cсылка
+// copy.a = 10;
+
+// console.log(copy);
+// console.log(obj);
+
+function copy(mainObj) {
+    let objCopy = {};
+
+    for (let key in mainObj) {
+        objCopy[key] = mainObj[key];        
+    }
+}
