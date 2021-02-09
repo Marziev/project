@@ -217,25 +217,25 @@
 // console.log(copy);
 // console.log(obj);
 
-function copy(mainObj) {
-    let objCopy = {};
+// function copy(mainObj) {
+//     let objCopy = {};
 
-    for (let key in mainObj) {
-        objCopy[key] = mainObj[key];        
-    }
+//     for (let key in mainObj) {
+//         objCopy[key] = mainObj[key];        
+//     }
 
-    return objCopy;
-}
+//     return objCopy;
+// }
 
-const numbers = {
-    a: 2,
-    b: 5,
-    c: {
-        x: 7,
-        y: 4
-    }
+// const numbers = {
+//     a: 2,
+//     b: 5,
+//     c: {
+//         x: 7,
+//         y: 4
+//     }
 
-};
+// };
 
 // const newNumbers = copy(numbers);
 
@@ -246,28 +246,49 @@ const numbers = {
 // console.log(newNumbers);
 // console.log(numbers);
 
-const add = {
-    d: 17,
-    e: 20
-};
+// const add = {
+//     d: 17,
+//     e: 20
+// };
 
-// console.log(Object.assign(numbers, add));
-const clone = Object.assign({}, add);
+// // console.log(Object.assign(numbers, add));
+// const clone = Object.assign({}, add);
 
-clone.d = 20;
+// clone.d = 20;
 
-console.log(clone);
-console.log(add);
+// console.log(clone);
+// console.log(add);
 
-const oldArray = ['a', 'b', 'c'];
-const newArray = oldArray.slice();
+// const oldArray = ['a', 'b', 'c'];
+// const newArray = oldArray.slice(); // копирует
 
-newArray[1] = 'red';
-console.log(oldArray);
-console.log(newArray);
+// newArray[1] = 'red';
+// console.log(oldArray);
+// console.log(newArray);
 
-const video = ['youtube', 'vimeo', 'rutube'],
-      blogs = ['wordpress', 'livejournal', 'blogger'],
-      internet = [...video, ...blogs, 'vk', 'facebook'];
+// const video = ['youtube', 'vimeo', 'rutube'],
+//       blogs = ['wordpress', 'livejournal', 'blogger'],
+//       internet = [...video, ...blogs, 'vk', 'facebook'];
 
-console.log(internet);
+// console.log(internet);
+
+// function log(a, b, c) {
+//     console.log(a);
+//     console.log(b);
+//     console.log(c);
+// }
+
+// const num = [2, 5, 7];
+// log(...num);
+
+// const array = ['a', 'b'];
+
+// // const newAr = [...array]; СПРЕД опертатор для массива
+
+// const q = {
+//     one: 1,
+//     two: 2
+// };
+
+// const newQ = {...q}; СПРЕД оператор для объекта
+// console.log(newQ);
