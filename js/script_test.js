@@ -198,13 +198,13 @@
 
 // ССЫЛКИ==================================================================================
 
-let a = 5,
-    b = a;
+// let a = 5,
+//     b = a;
 
-b = b + a;
+// b = b + a;
 
-console.log(b);
-console.log(a);
+// console.log(b);
+// console.log(a);
 
 // const obj = {
 //     a: 5,
@@ -223,4 +223,51 @@ function copy(mainObj) {
     for (let key in mainObj) {
         objCopy[key] = mainObj[key];        
     }
+
+    return objCopy;
 }
+
+const numbers = {
+    a: 2,
+    b: 5,
+    c: {
+        x: 7,
+        y: 4
+    }
+
+};
+
+// const newNumbers = copy(numbers);
+
+// newNumbers.a = 10;
+// newNumbers.c.x = 10;
+
+
+// console.log(newNumbers);
+// console.log(numbers);
+
+const add = {
+    d: 17,
+    e: 20
+};
+
+// console.log(Object.assign(numbers, add));
+const clone = Object.assign({}, add);
+
+clone.d = 20;
+
+console.log(clone);
+console.log(add);
+
+const oldArray = ['a', 'b', 'c'];
+const newArray = oldArray.slice();
+
+newArray[1] = 'red';
+console.log(oldArray);
+console.log(newArray);
+
+const video = ['youtube', 'vimeo', 'rutube'],
+      blogs = ['wordpress', 'livejournal', 'blogger'],
+      internet = [...video, ...blogs, 'vk', 'facebook'];
+
+console.log(internet);
