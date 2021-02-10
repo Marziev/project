@@ -292,3 +292,33 @@
 
 // const newQ = {...q}; СПРЕД оператор для объекта
 // console.log(newQ);
+// =========================================ООП==============================================================================
+
+// let str = "some";
+
+// let strObj = new String(str);
+
+// console.log(typeof(str));
+// console.log(typeof(strObj));
+
+// console.dir([1, 2, 3]);
+
+// const soldier = {
+//     health: 400,
+//     armor: 100,
+//     sayHello: function() {
+//         console.log('Hello')
+//     }
+// };
+
+// const jonh = Object.create(soldier); // Создает объект наследуя свойства 
+
+// // const jonh = {
+// //     health: 100
+// // };
+
+// // jonh.__proto__ = soldier; УСТАРЕЛА=========
+// // Object.setPrototypeOf(jonh, soldier); // Наследует свойства прототипа
+
+// // console.log(jonh.armor);
+// jonh.sayHello();
