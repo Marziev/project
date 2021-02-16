@@ -322,3 +322,28 @@
 
 // // console.log(jonh.armor);
 // jonh.sayHello();
+
+// ЗАДАЧИ НА СОБЕСЕДОВАНИЯХ ===============================================================
+
+// let x = 5;
+
+// alert(++x);
+
+// // let y = 1;
+
+// // let x = y = 2;
+
+// // alert(x);
+// // [ ] + false - null + true 
+
+// console.log(typeof([] + false));
+
+// console.log([] + 1 + 2);
+
+// alert( "1"[0] );
+
+// console.log(2 && 1 && null && 0 && undefined ); И запинается на лжи, ИЛИ запинается на правде 
+
+// console.log( 2 && 1 );
+
+// console.log(0 || "" || 2 || undefined || true || falsе );
