@@ -1,17 +1,40 @@
 "use strict";
 
-const box = document.getElementById('box');
+const box = document.getElementById('box'),
+       btns = document.getElementsByTagName('button'),
+       circles = document.getElementsByClassName('circle'),
+       hearts = document.querySelectorAll('.heart'),
+       oneHeart = document.querySelector('.heart'),
+       wrapper = document.querySelector('.wrapper');
 
-console.log(box);
+// box.style.backgroundColor = 'blue';
+// box.style.width = '500px';
 
-const btns = document.getElementsByTagName('button');
+box.style.cssText = 'bckground-color: red; width: 500px;';
 
-console.log(btns[1]);
+btns[1].style.borderRadius = '100%';
+circles[0].style.backgroundColor = 'red';
 
-const circles = document.getElementsByClassName('circle');
-console.log(circles);
+// for (let i = 0; i < hearts.length; i++) {
+//     hearts[i].style.backgroundColor = 'black';
+// }
 
-const heart = document.querySelectorAll('.heart');
-heart.forEach(item => {
-    console.log(item);
+hearts.forEach(item => {
+    item.style.backgroundColor = 'black';
 });
+
+const div = document.createElement('div');
+// const text = document.createTextNode('Тут был я!');
+
+div.classList.add('black');
+
+// wrapper.append(div); всталяет элемент в конец
+// wrapper.prepend(div); всталяет элемент в начало
+
+// wrapper.before(div); также вставляет элемент
+// wrapper.after(div); также вставляет элемент
+
+// circles[0].remove();
+
+hearts[0].replaceWith(circles[0]);
+
