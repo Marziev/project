@@ -19,16 +19,16 @@ circles[0].style.backgroundColor = 'red';
 //     hearts[i].style.backgroundColor = 'black';
 // }
 
-hearts.forEach(item => {
-    item.style.backgroundColor = 'black';
-});
+// hearts.forEach(item => {
+//     item.style.backgroundColor = 'black';
+// });
 
 const div = document.createElement('div');
 // const text = document.createTextNode('Тут был я!');
 
 div.classList.add('black');
 
-// wrapper.append(div); всталяет элемент в конец
+wrapper.append(div); // всталяет элемент в конец
 // wrapper.prepend(div); всталяет элемент в начало
 
 // wrapper.before(div); также вставляет элемент
@@ -36,5 +36,12 @@ div.classList.add('black');
 
 // circles[0].remove();
 
-hearts[0].replaceWith(circles[0]);
+// hearts[0].replaceWith(circles[0]);
+div.innerHTML =  "<h1>Hello world<>/h1"; 
+
+// div.textContent = "AKROMAT";
+
+div.insertAdjacentHTML('beforebegin', '<h2>WORLD</h2>');
+
+
 
